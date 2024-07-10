@@ -39,6 +39,7 @@ impl HighlightedText {
                     .replace('#', "\\#")
                     .replace('~', "\\~")
                     .replace('$', "\\$")
+                    .replace('"', "\\dq{}")
             );
 
             // if there is some other additional highlight, wrap the text in it
